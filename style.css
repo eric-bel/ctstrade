@@ -211,34 +211,31 @@ body {
 /*  header logo */
 
 .header {
-  border: 2px solid goldenrod;
-  height: 200px;
-  /* display: flex; */
+  /* border: 2px solid goldenrod; */
+  /* height: 200px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo_wrapper {
-    border: 1px solid goldenrod;
-    display: flex;
-    height: 190px;
-  }
+  display: flex;
+  /* height: 190px; */
+}
 
 .header .logo img {
   height: 55px;
   width: 57px;
-  left: 0px;
   top: 1px;
   border-radius: 0px;
-  /* left: 0%; */
-  /* right: 75.95%; */
-  /* top: 1.72%; */
-  /* bottom: 3.45%; */
+
   margin-left: 40px;
   margin-top: 23px;
 }
 
 /* Text lodo */
 
-logo_title-wrap
+/* .logo_title-wrap {} */
 
 .logo_title {
   width: 80px;
@@ -258,12 +255,10 @@ logo_title-wrap
   color: #1b1919;
 
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 22px;
 }
 
-
-
-.international-company {
+.international_company {
   /* left: 33.33%; */
   /* right: 0%; */
   /* top: 56.9%; */
@@ -278,10 +273,147 @@ logo_title-wrap
   /* Black */
   color: #1b1919;
 
-  margin-top: 20px;
+  margin-top: 2px;
   display: block;
-  /* margin-left: 20px; */
+  margin-left: 22px;
 }
+
+.hr {
+  height: 485px;
+  border: none;
+  margin-left: 355px;
+}
+
+.call-and-order {
+  display: flex;
+  justify-content: space-between;
+}
+
+.russian_number {
+  /* width: 174px; */
+  height: 26px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 19px; */
+  /* Black */
+  color: #1b1919;
+  margin-top: 39px;
+  margin-right: 38px;
+}
+
+.chinese_number {
+  /* + 8 (526) 452-29-37 */
+  /* width: 178px; */
+  display: flex;
+  height: 26px;
+
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 19px; */
+  line-height: 26px;
+  /* Black */
+  color: #1b1919;
+  margin-top: 39px;
+  margin-right: 38px;
+}
+
+.chinese_number img {
+  width: 35px;
+}
+
+.order {
+  /* width: 125px; */
+
+  margin-top: 32px;
+  margin-right: 35px;
+}
+
+.order .button {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  /* font-size: 13px; */
+  line-height: 18px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #1b1919;
+  border: 1px solid red;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 40px;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.under-header {
+  display: flex;
+}
+
+.h1 {
+  width: 1013px;
+  height: 294px;
+  font-family: Druk Cyr;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 98px;
+  line-height: 98px;
+  /* or 100% */
+  /* Black */
+  color: #1b1919;
+
+  margin-left: 40px;
+  margin-top: 42px;
+  overflow: visible;
+}
+
+.from-china {
+  color: red;
+}
+
+.first {
+  /* Работаем с минимальной суммой заказа от 1000$. */
+  /* position: static; */
+  font-family: Manrope;
+  font-style: normal;
+  /* font-weight: 500; */
+  /* font-size: 18px; */
+  line-height: 20px;
+  color: #1b1919;
+  padding: 5px;
+  border: 1px solid gray;
+  width: 290px;
+  margin-top: 78px;
+  margin-left: 210px;
+}
+
+.second {
+  border: 1px solid gray;
+  margin-top: 52px;
+  width: 386px;
+  padding: 5px;
+  margin-left: 390px;
+}
+
+.third {
+  border: 1px solid gray;
+  margin-top: 52px;
+  width: 188px;
+  line-height: 20px;
+  padding: 5px;
+  margin-left: 350px;
+}
+
+.main-content {
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* .little-blocks  */
 
 /* @media (max-width: 700px) {
     img {
