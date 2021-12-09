@@ -489,6 +489,51 @@ body {
   color: #ffffff;
 }
 
+.circle-button {
+  position: absolute;
+  align-self: end;
+  width: 274px;
+  height: 274px;
+  background: #d31919;
+  border-style: none;
+  border-radius: 50%;
+  justify-self: start;
+  margin-right: 810px;
+}
+
+.circle-button .in-input {
+  /* width: 213px; */
+  height: 54px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.circle-button .free {
+  position: static;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 1px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1b1919;
+  width: 99px;
+  height: 23px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
 /* .little-blocks  */
 
 /* @media (max-width: 700px) {
