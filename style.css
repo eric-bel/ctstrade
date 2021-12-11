@@ -11,16 +11,18 @@ body {
 
 @font-face {
   font-family: "Druk Cyr";
-  src: url("./assets/fonts/Dru-Cyr/DrukCyr-Bold.eot");
+  src: url("./assets/fonts/Druk-Cyr/DrukCyr-Bold.eot");
   src: local("Druk Cyr Bold"), local("DrukCyr-Bold"),
-    url("./assets/fonts/Dru-Cyr/DrukCyr-Bold.eot?#iefix")
+    url("./assets/fonts/Druk-Cyr/DrukCyr-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("./assets/fonts/Dru-Cyr/DrukCyr-Bold.woff2") format("woff2"),
-    url("./assets/fonts/Dru-Cyr/DrukCyr-Bold.woff") format("woff"),
-    url("./assets/fonts/Dru-Cyr/DrukCyr-Bold.ttf") format("truetype");
+    url("./assets/fonts/Druk-Cyr/DrukCyr-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Druk-Cyr/DrukCyr-Bold.woff") format("woff"),
+    url("./assets/fonts/Druk-Cyr/DrukCyr-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: norma-;
 }
+
+/* --------------- fix path ^  ----------------- */
 
 @font-face {
   font-family: "Druk Cyr";
@@ -498,10 +500,16 @@ body {
   border-style: none;
   border-radius: 50%;
   justify-self: start;
-  margin-right: 810px;
+  margin-right: 890px;
 }
 
-.circle-button .in-input {
+/* .circle-button .btn-wrap {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+} */
+
+.btn-wrap .in-input {
   /* width: 213px; */
   height: 54px;
   font-family: Manrope;
@@ -516,7 +524,7 @@ body {
   color: #ffffff;
 }
 
-.circle-button .free {
+.btn-wrap .free {
   position: static;
   border: 1px solid white;
   background-color: white;
