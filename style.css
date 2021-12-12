@@ -7,6 +7,11 @@ body {
   font-family: "Druk Cyr", Arial, Helvetica, sans-serif;
 }
 
+.main-wrapper {
+  max-width: 1920px;
+  margin: 0px auto;
+}
+
 /* Fonts */
 
 @font-face {
