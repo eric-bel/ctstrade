@@ -265,10 +265,7 @@ body {
 }
 .vertical_line {
   width: 1px;
-  height: 485px;
-
-  /* Black */
-
+  height: 900px;
   background: #1b1919;
 }
 .right_block_header {
@@ -342,7 +339,8 @@ body {
   width: 1013px;
   margin-top: 48px;
 }
-.main_h1_2 {
+
+.main_h1_2, .main_h1_3 {
   display: none;
 }
 .left_block_main h1 {
@@ -408,5 +406,131 @@ body {
   padding-top: 7px;
   padding-left: 7px;
   padding-right: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1919px) {
+  .vertical_line {
+    display: none;
+  }
+}
+@media (max-width: 1665px) {
+  .right_block_main {
+    display: none;
+  }
+  .container_messenger_link {
+    position: absolute;
+    right: 0px;
+    top: 120px;
+  }
+}
+@media (max-width: 1365px) {
+  ._container {
+    padding: 0px 29px;
+  }
+  .left_block_main h1 {
+    font-size: 68px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 1023px) {
+  .container_phone {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .phone_ru {
+    margin-top: 28px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .phone_cn {
+    margin-top: 6px;
+    overflow: hidden;
+    width: 100%;
+    margin-right: auto;
+    margin-left: 39px;
+  }
+  .container_messenger_link {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .container_messenger_link a {
+    margin-top: 29px;
+    margin-right: 0px;
+  }
+  .container_messenger_link a:not(:first-child) {
+    margin-left: 0px;
+  }
+  .left_block_main {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .main_h1_1 {
+    display: none;
+  }
+  .main_h1_2 {
+    display: block;
+  }
+  .left_block_main > * {
+    margin: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .button_feedback {
+    display: none;
+  }
+  ._container {
+    padding: 0px 15px;
+  }
+  .container_phone {
+    margin-right: 8px;
+  }
+  .container_logo_name {
+    display: none;
+  }
+  .header {
+    position: relative;
+  }
+  .container_messenger_link {
+    display: inline;
+    position: absolute;
+    right: 13px;
+    top: 90px;
+    margin-right: 0px;
+  }
+.container_messenger_link a {
+margin-right: 27px;
+}
+
+.container_messenger_link a :not(:first-child) {
+margin-right: 0px;
+}
+.left_block_main{
+  height: auto;
+}
+.main_h1_1, .main_h1_2{
+  display: none;
+}
+.main_h1_3 {
+  display: block;
+  font-family: Druk Cyr;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 52px;
+  color: #1B1919;
+}
+
+ 
 }
 
