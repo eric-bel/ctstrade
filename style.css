@@ -482,6 +482,9 @@ body {
   text-align: center;
   color: #ffffff;
 }
+.button_mini {
+  display: none;
+}
 .button_video {
   position: absolute;
   height: 24px;
@@ -511,12 +514,204 @@ body {
 
 /* Frame Styles start */
 .container_frame {
+
   display: flex;
   justify-content: space-between;
 }
 .frame {
   display: none;
 }
+
+
+/* Эрика код нало */
+.problems {
+  /* max-height: 933px; */
+  /* ! убрать след. строку */
+  min-height: 933px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* position: relative; */
+}
+
+.problems_top_block {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  /* margin-bottom: 50px; */
+}
+
+.single_tittle {
+  margin-top: 54px;
+  /* margin-top: 54px; */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #1b1919;
+  /* position: absolute; */
+  width: 112px;
+  height: 27px;
+  /* left: 0px;
+  top: 54px; */
+  margin-right: 201px;
+}
+
+.middle_block {
+  display: flex;
+  flex-direction: column;
+}
+.middle_block h2 {
+  max-width: 849px;
+  height: 82px;
+  font-family: Druk Cyr;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 78px;
+  line-height: 82px;
+  color: #1b1919;
+  margin-bottom: 98px;
+}
+.h2_1666 {
+  display: none;
+}
+
+.points_item {
+  display: flex;
+  width: 900px;
+  height: 68px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+  /* Black */
+  color: #1b1919;
+  border-top: 1px solid #1b1919;
+  align-self: center;
+}
+.points_item p {
+  margin-right: 34px;
+}
+.points_item h3 {
+  margin-top: 17px;
+}
+
+.situation_help {
+  margin-left: 92px;
+  margin-top: 60px;
+}
+
+.we_help {
+  /* position: absolute; */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+  /* Black */
+  color: #1b1919;
+  width: 274px;
+  height: 104px;
+}
+
+.problems_top_block .imgman {
+  position: absolute;
+  width: 530px;
+  height: 580px;
+  right: -41px;
+  /* top: 40px; */
+  bottom: -550px;
+  /* transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0); */
+}
+
+.points {
+  /* position: absolute; */
+  /* left: 300px;
+  top: 200px; */
+  /* left: 353px;
+  top: 181px; */
+  width: 905px;
+  height: 72px;
+  text-align: center;
+}
+
+
+/* Buttom start */
+.container_button_video {
+    position: relative;
+  }
+  .container_button_video {
+    position: relative;
+    width: 274px;
+    height: 274px;
+    background: #d31919;
+    border-radius: 50%;
+    bottom: 278px;
+    left: 313px;
+  }
+  .container_button_video img {
+    position: absolute;
+    left: 6.39%;
+    right: 50%;
+    top: 20.8%;
+    bottom: 69.71%;
+  }
+  .container_button_video h3 {
+    position: absolute;
+    width: 213px;
+    height: 54px;
+    left: calc(50% - 213px / 2);
+    top: 109px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+  .button_video {
+    position: absolute;
+    height: 24px;
+    width: 99px;
+    left: 32%;
+    right: 32%;
+    top: 178px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #1b1919;
+    background: #ffffff;
+  }
+  .container_button_video:hover {
+    cursor: pointer;
+    background: #bc1010;
+    height: 246px;
+    width: 246px;
+    bottom: 250px;
+    transition: 0.3s;
+  }
+  
+/* Buttom end */
+
+.points2 {
+    margin-right: 50px;
+}
+
+/* Эрика код конец */
+
+
+
+
 
 /* Media Styles start */
 
@@ -596,6 +791,15 @@ body {
     margin-top: -43px;
     margin-left: 290px;
   }
+
+  .single_tittle {
+    display: none;
+  }
+
+  .situation_help {
+    right: 663px;
+  }
+
 }
 @media (max-width: 1665px) {
   .right_block_main {
@@ -605,6 +809,9 @@ body {
     position: absolute;
     right: 0px;
     top: 120px;
+  }
+  .middle_block .h2 {
+    left: 0px;
   }
 }
 @media (max-width: 1365px) {
@@ -673,28 +880,19 @@ body {
   .video_text {
     right: -542px;
   }
-  /* .frame_end1 {
-    height: 63px;
-    width: 295px;
-    border: 1px solid #1b1919; */
+  .frame {
+    height: auto;
+    width: auto;
   }
+
   .frame_end2 {
-    /* height: 40px;
-    width: 385px;
-    border: 1px solid #1b1919; */
     margin-top: 20px;
     margin-left: 90px;
   }
   .frame_end3 {
-    height: 90px;
-    width: 200px;
-    border: 1px solid #1b1919;
-    margin-top: -43px;
-    margin-left: 290px;
+    margin-top: 20px;
+    margin-left: 136px;
   }
-
-
-
 }
 @media (max-width: 767px) {
   .button_feedback {
@@ -722,7 +920,6 @@ body {
   .container_messenger_link a {
     margin-right: 27px;
   }
-
   .container_messenger_link a:last-child {
     margin-right: 0px;
   }
@@ -754,5 +951,61 @@ body {
     right: -413px;
     font-size: 36px;
     line-height: 46px;
+  }
+  .container_button_video {
+    height: 120px;
+    width: 120px;
+    bottom: 32px;
+    left: 0px;
+    
+  }
+  .container_button_video img {
+    height: 11.818181991577148px;
+    width: 51.818180084228516px;
+    left: 8.181640625px;
+    top: 24.54547119140625px;
+  }
+  .button_mini {
+    text-align: center;
+    display: block;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    width: min-content;
+    height: 32px;
+    color: white;
+  }
+
+  .button_midle {
+    display: none;
+  }
+  .button_video {
+    height: 18px;
+    width: 71px;
+    font-size: 12px;
+    line-height: 16px;
+    left: 21%;
+    top: 79px;
+  }
+
+  .frame {
+    justify-content: start;
+  }
+  .frame_end1 {
+    /* margin-top: 50px; */
+  }
+  .frame_end2 {
+    /* margin-top: 20px; */
+    margin-left: 90px;
+  }
+  .frame_end3 {
+    /* margin-top: 20px; */
+    margin-left: 136px;
+    /* margin-top: -129px; */
   }
 }
