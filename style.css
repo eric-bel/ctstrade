@@ -271,7 +271,6 @@ body {
 .right_block_header {
   display: flex;
   margin-top: -8px;
-  /* border-left: solid 1px #1b1919; */
   width: 772px;
   justify-content: space-between;
 }
@@ -324,23 +323,29 @@ body {
   margin-left: 40px;
   background-color: white;
 }
+.button_feedback:hover {
+  cursor: pointer;
+  background: #d31919;
+  color: #ffffff;
+  transition: 0.3s;
+}
 
 /* Header Styles end */
 
 /* Main Styles start */
+
 .main {
   display: flex;
   margin-top: 3px;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
 }
 .left_block_main {
   height: 294px;
   width: 1013px;
   margin-top: 48px;
 }
-
-.main_h1_2, .main_h1_3 {
+.main_h1_2,
+.main_h1_3 {
   display: none;
 }
 .left_block_main h1 {
@@ -359,7 +364,6 @@ body {
   width: 717px;
   padding-left: 39px;
 }
-
 .frame1 {
   padding: 7px 16px 11px 16px;
   max-width: 306px;
@@ -408,18 +412,189 @@ body {
   padding-right: 7px;
 }
 
+/* Main Styles end */
 
+/* Video Styles start */
 
+.video_container {
+  margin-top: 66px;
+  position: relative;
+  overflow: hidden;
+}
 
+.video_text {
+  position: absolute;
+  font-family: Druk Cyr;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 78px;
+  line-height: 82px;
+  color: #ffffff;
+  top: 67px;
+  right: -887px;
+  white-space: nowrap;
+  animation-name: video_text;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-duration: 5s;
+}
+@keyframes video_text {
+  0% {
+    right: -887px;
+  }
+  100% {
+    right: 140px;
+  }
+}
+/* Video Styles start */
 
+.container_button_video {
+  position: relative;
+}
+.container_button_video {
+  position: relative;
+  width: 274px;
+  height: 274px;
+  background: #d31919;
+  border-radius: 50%;
+  bottom: 278px;
+  left: 313px;
+}
+.container_button_video img {
+  position: absolute;
+  left: 6.39%;
+  right: 50%;
+  top: 20.8%;
+  bottom: 69.71%;
+}
+.container_button_video h3 {
+  position: absolute;
+  width: 213px;
+  height: 54px;
+  left: calc(50% - 213px / 2);
+  top: 109px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.button_video {
+  position: absolute;
+  height: 24px;
+  width: 99px;
+  left: 32%;
+  right: 32%;
+  top: 178px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1b1919;
+  background: #ffffff;
+}
+.container_button_video:hover {
+  cursor: pointer;
+  background: #bc1010;
+  height: 246px;
+  width: 246px;
+  bottom: 250px;
+  transition: 0.3s;
+}
 
+/* Video Styles end */
 
+/* Frame Styles start */
+.container_frame {
+  display: flex;
+  justify-content: space-between;
+}
+.frame {
+  display: none;
+}
 
-
+/* Media Styles start */
 
 @media (max-width: 1919px) {
   .vertical_line {
     display: none;
+  }
+  .container_button_video {
+    height: 216px;
+    width: 216px;
+    bottom: 60px;
+    left: 0px;
+  }
+  .container_button_video h3 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    width: 168px;
+    height: 48px;
+    left: 9%;
+    top: 81px;
+  }
+  .button_video {
+    font-size: 14px;
+    line-height: 19px;
+    /* text-align: center; */
+    left: 25%;
+    top: 143px;
+  }
+  .container_button_video:hover {
+    cursor: pointer;
+    bottom: 20px;
+    background: #bc1010;
+    transition: 0.3s;
+    height: 200px;
+    width: 200px;
+    bottom: 56px;
+  }
+  .frame {
+    display: block;
+    justify-content: end;
+    margin-top: 20px;
+    height: 176px;
+    width: 586px;
+  }
+  .frame h2 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1919;
+    margin-left: 12px;
+    margin-top: 8px;
+  }
+  .frame span {
+    color: #d31919;
+  }
+  .frame_end1 {
+    height: 63px;
+    width: 295px;
+    border: 1px solid #1b1919;
+  }
+  .frame_end2 {
+    height: 40px;
+    width: 385px;
+    border: 1px solid #1b1919;
+    margin-top: 20px;
+    margin-left: -125px;
+  }
+  .frame_end3 {
+    height: 90px;
+    width: 200px;
+    border: 1px solid #1b1919;
+    margin-top: -43px;
+    margin-left: 290px;
   }
 }
 @media (max-width: 1665px) {
@@ -439,6 +614,15 @@ body {
   .left_block_main h1 {
     font-size: 68px;
     line-height: 70px;
+  }
+  .video_container {
+    margin-top: -25px;
+  }
+  .video_text {
+    top: 47px;
+    font-size: 48px;
+    line-height: 61px;
+    right: -543px;
   }
 }
 @media (max-width: 1023px) {
@@ -474,7 +658,6 @@ body {
     height: auto;
     overflow: hidden;
   }
-
   .main_h1_1 {
     display: none;
   }
@@ -484,6 +667,34 @@ body {
   .left_block_main > * {
     margin: 0px;
   }
+  .video_container {
+    margin-top: 50px;
+  }
+  .video_text {
+    right: -542px;
+  }
+  /* .frame_end1 {
+    height: 63px;
+    width: 295px;
+    border: 1px solid #1b1919; */
+  }
+  .frame_end2 {
+    /* height: 40px;
+    width: 385px;
+    border: 1px solid #1b1919; */
+    margin-top: 20px;
+    margin-left: 90px;
+  }
+  .frame_end3 {
+    height: 90px;
+    width: 200px;
+    border: 1px solid #1b1919;
+    margin-top: -43px;
+    margin-left: 290px;
+  }
+
+
+
 }
 @media (max-width: 767px) {
   .button_feedback {
@@ -508,29 +719,40 @@ body {
     top: 90px;
     margin-right: 0px;
   }
-.container_messenger_link a {
-margin-right: 27px;
-}
+  .container_messenger_link a {
+    margin-right: 27px;
+  }
 
-.container_messenger_link a :not(:first-child) {
-margin-right: 0px;
-}
-.left_block_main{
-  height: auto;
-}
-.main_h1_1, .main_h1_2{
-  display: none;
-}
-.main_h1_3 {
-  display: block;
-  font-family: Druk Cyr;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 52px;
-  line-height: 52px;
-  color: #1B1919;
-}
+  .container_messenger_link a:last-child {
+    margin-right: 0px;
+  }
 
- 
+  .left_block_main {
+    height: auto;
+  }
+  .main_h1_1,
+  .main_h1_2 {
+    display: none;
+  }
+  .main_h1_3 {
+    display: block;
+    font-family: Druk Cyr;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 52px;
+    color: #1b1919;
+  }
+  .video_container {
+    margin-top: 500px;
+  }
+  .video_container {
+    margin-top: 50px;
+  }
+  .video_text {
+    top: 30px;
+    right: -413px;
+    font-size: 36px;
+    line-height: 46px;
+  }
 }
-
